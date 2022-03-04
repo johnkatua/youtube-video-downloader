@@ -15,3 +15,10 @@ the youtube link and hit the download.
 2. [ExpressJS](https://expressjs.com/).
 3. [ReactJS](https://reactjs.org/).
 4. [NodeJS](https://nodejs.org/en/).
+
+## Contact
+
+Name - [John Katua](https://www.linkedin.com/in/johnkatua/).
+
+Project Link - [https://github.com/johnkatua/youtube-video-downloader](https://github.com/johnkatua/youtube-video-downloader).
+
