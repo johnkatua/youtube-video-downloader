@@ -1,38 +1,138 @@
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+
+
 .App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App h1 {
   text-align: center;
+  padding: 1rem 0 5rem 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+form input {
+  width: 100%;
+  padding: .5rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--dkblue);
+  color: var(--white);
+  font-size: 1.2rem;
+  font-family: var(--mono);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form button {
+  width: 50%;
+  padding: .5rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--hotmag);
+  color: var(--white);
+  font-size: 1.2rem;
+  font-family: var(--mono);
+  cursor: pointer;
 }
+
+form button:hover {
+  background-color: var(--magenta);
+}
+
+.All--videos__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.All--videos__data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: var(--black);
+  padding: 2rem 0;
+}
+
+.video {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+}
+
+.video--container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+  border: 1px solid var(--white);
+}
+
+
+.video--container button {
+  width: 20%;
+  padding: .5rem;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: var(--hotmag);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
