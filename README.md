@@ -1,6 +1,6 @@
 # Youtube-video-downloader
 
-![youtube-video-download](image1.png)
+![youtube-video-download](./ui/src/assets/image1.png)
 
 ## Introduction
 
